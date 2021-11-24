@@ -7,3 +7,45 @@
   --light-grayish-cyan-a: hsl(189, 41%, 97%);
   --white: hsl(0, 0%, 100%);
 }
+*{
+  box-sizing: border-box;
+}
+body{
+  background: var(--light-grayish-cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+p{
+  margin: ;
+}
+.card{
+  width: 680px;
+  height: 350px;
+  background: var(--white);
+  border-radius: 20px;
+  display: flex;
+  padding: 25px;
+  gap: 25px;
+}
+
+.card__section{
+  background: var(--very-dark-cyan);
+  flex-basis: 50%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.card__section--ligth{
+  background: var(--light-grayish-cyan);
+}
+
+.card__row{
+  background: var(--strong-cyan);
+  /* height: 50px; */
+}
