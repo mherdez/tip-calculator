@@ -28,27 +28,74 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-   
+
     <article class="card">
-      <div class="card__section card__section--ligth">
-        <div class="card__row">
-          <p class="card__title">Bill</p>
-          <input type="text" class="card__input">
-        </div>
-        <div class="card__row">
-          x
-        </div>
-        <div class="card__row">
-          xx
-        </div>
-
-      </div>
       <div class="card__section">
-
+       <div class="card__row"></div>
+       <div class="card__row card__grid">
+         
+         <div class="porcentaje">
+          <input id="p01" type="radio" name="porc" class="radio">
+          <label for="01">1</label>
+         </div>
+         <div class="porcentaje">
+          <input id="p02" type="radio" name="porc" class="radio">
+          <label for="02">2</label>
+         </div>
+         <div class="porcentaje">
+          <input id="p03" type="radio" name="porc" class="radio">
+          <label for="03">3</label>
+         </div>
+         <div class="porcentaje">
+          <input id="p04" type="radio" name="porc" class="radio">
+          <label for="04">4</label>
+         </div>
+         <div class="porcentaje">
+          <input id="p05" type="radio" name="porc" class="radio">
+          <label for="05">5</label>
+         </div>
+         <div class="porcentaje">
+          <input id="p06" type="radio" name="porc" class="radio">
+          <label for="06">6</label>
+         </div>
+         
+       </div>
+       <div class="card__row"></div>
+      </div>
+      <div class="card__section card__section--dark">
+        <div class="card__top">
+          <div class="card__row">
+            <div class="card__desc">
+              <div class="card__text">
+                Tip Amount
+              </div>
+              <div class="card__subtext">
+                / person
+              </div>
+            </div>
+            <div id="tip-amount" class="card__import">
+              $0.00
+            </div>
+          </div>
+          <div class="card__row">
+            <div class="card__desc">
+              <div class="card__text">
+                Total
+              </div>
+              <div class="card__subtext">
+                / person
+              </div>
+            </div>
+            <div id="total" class="card__import">
+              $0.00
+            </div>
+          </div>
+        </div>
+        <div class="card__bottom"></div>
       </div>
     </article>
 
-
+    <script src="calculator.js"></script>
   </body>
 </html>
 </body>

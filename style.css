@@ -1,51 +1,83 @@
-:root {
-  --strong-cyan: hsl(172, 67%, 45%);
-  --very-dark-cyan: hsl(183, 100%, 15%);
-  --dark-grayish-cyan: hsl(186, 14%, 43%);
-  --dark-grayish-cyan-a: hsl(184, 14%, 56%);
-  --light-grayish-cyan: hsl(185, 41%, 84%);
-  --light-grayish-cyan-a: hsl(189, 41%, 97%);
-  --white: hsl(0, 0%, 100%);
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-*{
-  box-sizing: border-box;
-}
-body{
-  background: var(--light-grayish-cyan);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+body {
+  background: #c5e4e7;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
 }
-p{
-  margin: ;
-}
-.card{
-  width: 680px;
-  height: 350px;
-  background: var(--white);
+
+.card {
+  width: 700px;
+  min-height: 370px;
+  background: white;
   border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  padding: 25px;
-  gap: 25px;
+  padding: 28px;
+  gap: 28px;
 }
 
-.card__section{
-  background: var(--very-dark-cyan);
-  flex-basis: 50%;
-  height: 100%;
+.card__section {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  min-height: 300px;
+  background: #c5e4e7;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
+  padding: 30px;
 }
 
-.card__section--ligth{
-  background: var(--light-grayish-cyan);
+.card__section--dark {
+  background: #00494d;
 }
 
-.card__row{
-  background: var(--strong-cyan);
-  /* height: 50px; */
+.card__row {
+  min-height: 70px;
 }
+
+.card__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.porcentaje {
+  background: cornsilk;
+  border: 1px solid black;
+  text-align: center;
+  opacity: 1;
+  position: relative;
+}
+
+.radio {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --dark-grayish-cyan-a: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --light-grayish-cyan-a: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  box-sizing: border-box;
+}
+body{
+  background: var(--light-grayish-cyan);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+}
+.card{
+  width: 700px;
+  height: 370px;
+  background: var(--white);
+  border-radius: 20px;
+  display: flex;
+  padding: 28px;
+  gap: 28px;
+}
+.card__section{
+  flex-basis: 50%;
+  height: 100%;
+  background: var(--light-grayish-cyan);
+  border-radius: 10px;
+  padding: 30px;
+}
+.card__section--dark{
+  background: var(--very-dark-cyan);
+}
+.card__row{
+  display: flex;
+  margin-bottom: 1.2rem;
+}
+.card__desc{
+}
+.card__text{
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--light-grayish-cyan);
+}
+.card__subtext{
+  font-size: 0.7rem;
+  color: var(--dark-grayish-cyan-a);
+  font-weight: 700;
+}
+.card__import{
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--strong-cyan);
+  letter-spacing: 1px;
+}
